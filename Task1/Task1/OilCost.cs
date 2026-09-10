@@ -18,6 +18,7 @@ namespace Task1
             Date = date;
             Cost = cost;
         }
+        
 
     }
 }
