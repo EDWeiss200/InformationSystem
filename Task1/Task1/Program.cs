@@ -72,7 +72,7 @@ namespace Task1
                 string line;
 
 
-                while ((line = reader.ReadLine()) != null)
+                while ((line = reader.ReadLine()) != "")
                 {
                     if (line.Split(' ')[0] == "OIL")
                     {
