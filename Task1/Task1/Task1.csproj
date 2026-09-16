@@ -44,7 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AZS.cs" />
+    <Compile Include="FuelTankAzs.cs" />
     <Compile Include="OilCost.cs" />
+    <Compile Include="OilTruck.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
