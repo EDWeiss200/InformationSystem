@@ -8,7 +8,7 @@ namespace Task1
 {
     internal class OilCost
     {
-        public string OilType { get; set; }
+        public string OilType;
         public DateTime Date { get; set; }
         public double Cost { get; set; }
 
@@ -18,7 +18,12 @@ namespace Task1
             Date = date;
             Cost = cost;
         }
-        
+
+        public virtual string ToString()
+        {
+            return $"{OilType} на {Date:yyyy.MM.dd} {Cost} руб./л";
+        }
+
 
     }
 }
