@@ -16,6 +16,50 @@ namespace Task1
             Console.WriteLine("Введите путь к файлу");
             string path = Console.ReadLine();
             List<OilCost> listOil = Upload(path);
+            bool flag = true;
+            while (flag)
+            {
+                Console.Clear();
+                Console.WriteLine("1. Вывести список всех объектов типа OilCost");
+                Console.WriteLine("2. Добавить объект OilCost");
+                Console.WriteLine("3. Добавить объект OptFuelPrice");
+                Console.WriteLine("4. Добавить объект StationFuelPrice");
+                Console.WriteLine("5. Выход");
+                Console.Write("Ваш выбор: ");
+                string actionStr = Console.ReadLine();
+                if (!(int.TryParse(actionStr, out int action)))
+                {
+                    Console.WriteLine("Введите корректное целое число!");
+                    continue;
+                }
+
+                switch(action)
+                {
+                    case 1:
+                        PrintOil(listOil);
+                        Console.ReadLine();
+                        break;
+                    case 2:
+                        break;
+                    case 3:
+                        break;
+                    case 4:
+                        break;
+                    case 5:
+                        flag = false;
+                        break;
+
+
+                    default:
+                        Console.WriteLine("Варианта с таким номером нет в списке. Введите корректное число из меню");
+                        Console.ReadLine();
+                        break;
+                }
+                
+                
+
+            }
+            
             PrintOil(listOil);
 
         }

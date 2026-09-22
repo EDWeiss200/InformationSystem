@@ -20,7 +20,6 @@ namespace Task1
 
         public override string ToString()
         {
-            string promo = HasDiscount ? " (со скидкой)" : "";
             return $"АЗС: {StationName} Вид топлива: {OilType} Дата: {Date:yyyy.MM.dd} Цена: {Cost} СКИДКА: {HasDiscount}";
         }
     }
