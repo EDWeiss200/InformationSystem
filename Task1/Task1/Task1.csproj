@@ -43,9 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AZS.cs" />
+    <Compile Include="ConsoleUI.cs" />
     <Compile Include="FileHandler.cs" />
     <Compile Include="FuelParser.cs" />
+    <Compile Include="FuelRepository.cs" />
     <Compile Include="OilCost.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

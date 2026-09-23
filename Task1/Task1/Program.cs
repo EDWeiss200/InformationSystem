@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Globalization;
 using System.IO;
 using System.Linq;
@@ -13,154 +14,64 @@ namespace Task1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите путь к файлу");
-            string path = Console.ReadLine();
-            List<OilCost> listOil = Upload(path);
+
+            ConsoleUI ui = new ConsoleUI();
+            FileHandler fileHandler = new FileHandler();
+            FuelParser fuelParser = new FuelParser();
+
+            string path = ui.GetPathFile();
+
+            List<string> lines = fileHandler.ReadLines(path);
+
+            List<OilCost> listOils = lines.Select(
+                line => fuelParser.ParseLine(line))
+                .ToList();
+
+            FuelRepository fuelRepository = new FuelRepository(listOils);
+
+
             bool flag = true;
+
             while (flag)
             {
-                Console.Clear();
-                Console.WriteLine("1. Вывести список всех объектов типа OilCost");
-                Console.WriteLine("2. Добавить объект OilCost");
-                Console.WriteLine("3. Добавить объект OptFuelPrice");
-                Console.WriteLine("4. Добавить объект StationFuelPrice");
-                Console.WriteLine("5. Выход");
-                Console.Write("Ваш выбор: ");
-                string actionStr = Console.ReadLine();
-                if (!(int.TryParse(actionStr, out int action)))
+                int action;
+                try
                 {
-                    Console.WriteLine("Введите корректное целое число!");
+                    action = ui.ShowAndGetAction();
+                }
+                catch
+                {
                     continue;
                 }
 
-                switch(action)
+                switch (action)
                 {
                     case 1:
-                        PrintOil(listOil);
+                        ui.PrintOils(fuelRepository.GetAllOils());
                         Console.ReadLine();
                         break;
                     case 2:
+                        string line = ui.GetStringForOil();
+                        OilCost oil = fuelParser.ParseLine(line);
+                        fuelRepository.AddOil(oil);
+                        Console.ReadLine();
                         break;
                     case 3:
-                        break;
-                    case 4:
-                        break;
-                    case 5:
                         flag = false;
                         break;
-
 
                     default:
                         Console.WriteLine("Варианта с таким номером нет в списке. Введите корректное число из меню");
                         Console.ReadLine();
                         break;
                 }
-                
-                
+
+
 
             }
-            
-            PrintOil(listOil);
+
 
         }
-
-
-
-        static public void PrintOil(List<OilCost> listOil)
-        {
-            Console.WriteLine("ВЫВОД ЦЕН НА ТОПЛИВО");
-            foreach (var oil in listOil)
-            {
-                Console.WriteLine(oil.ToString());
-
-            }
-        }
-
-
-
-        static public OilCost GenerateOil(string input_data)
-        {
-
-            string[] input_data_list = input_data.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-
-            string OilType = input_data_list[1].Trim('"');
-            DateTime dt = DateTime.ParseExact(input_data_list[2], "yyyy.MM.dd", null);
-            double cost = double.Parse(input_data_list[3]);
-
-            OilCost oilcost = new OilCost(OilType, dt, cost);
-            return oilcost;
-        }
-
-
-        static public OptFuelPrice GeneratуOptOil(string input_data)
-        {
-
-            string[] input_data_list = input_data.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-
-            string oilType = input_data_list[1].Trim('"');
-            DateTime dt = DateTime.ParseExact(input_data_list[2], "yyyy.MM.dd", null);
-            double cost = double.Parse(input_data_list[3]);
-
-            int minBatchTons = int.Parse(input_data_list[4]);
-            int deliveryDays = int.Parse(input_data_list[5]);
-
-            OptFuelPrice optFuelPrice = new OptFuelPrice(oilType, dt, cost, minBatchTons, deliveryDays);
-            return optFuelPrice;
-        }
-
-
-        static public StationFuelPrice GenerateStationOil(string input_data)
-        {
-
-            string[] input_data_list = input_data.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-
-            string oilType = input_data_list[1].Trim('"');
-            DateTime dt = DateTime.ParseExact(input_data_list[2], "yyyy.MM.dd", null);
-            double cost = double.Parse(input_data_list[3]);
-
-            string stationName = input_data_list[4].Trim('"');
-            bool hasDiscount = bool.Parse(input_data_list[5]);
-
-            StationFuelPrice stationFuelPrice = new StationFuelPrice(oilType,dt, cost, stationName,hasDiscount);
-            return stationFuelPrice;
-        }
-
-
-
-        static public List<OilCost> Upload(string path)
-        {
-            List<OilCost> listOil = new List<OilCost>();
-           
-
-            using (StreamReader reader = new StreamReader(path))
-            {
-                string line;
-
-
-                while ((line = reader.ReadLine()) != null)
-                {
-                    if (line.Split(' ')[0] == "OIL")
-                    {
-                        OilCost oil = GenerateOil(line);
-                        listOil.Add(oil);
-                    }
-                    else if(line.Split(' ')[0] == "OPTOIL")
-                    {
-                        OptFuelPrice optFuelPrice = GeneratуOptOil(line);
-                        listOil.Add(optFuelPrice);
-                    }
-                    else if (line.Split(' ')[0] == "STATIONOIL")
-                    {
-                        StationFuelPrice optFuelPrice = GenerateStationOil(line);
-                        listOil.Add(optFuelPrice);
-                    }
-
-                }
-            }
-
-            return listOil;
-        }
-
 
     }
 }
