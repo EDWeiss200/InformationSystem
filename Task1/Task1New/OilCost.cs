@@ -19,7 +19,7 @@ namespace Task1
             Cost = cost;
         }
 
-        public virtual string ToString()
+        public override string ToString()
         {
             return $"OIL {OilType} на {Date:yyyy.MM.dd} {Cost} руб./л";
         }

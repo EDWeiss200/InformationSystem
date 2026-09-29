@@ -20,7 +20,7 @@ namespace Task1
                 Console.WriteLine("3. Выход");
                 Console.Write("Ваш выбор: ");
 
-                string actionStr = Console.ReadLine();
+                string actionStr = Console.ReadLine() ?? string.Empty; ;
                 if (int.TryParse(actionStr, out int action))
                 {
                     return action;
@@ -34,7 +34,7 @@ namespace Task1
         public string GetPathFile()
         {
             Console.Write("Введите путь к файлу или используйте базовый (C:/Users/Григорий/Desktop/text.txt) пустым вводом: ");
-            string path = Console.ReadLine();
+            string path = Console.ReadLine() ?? string.Empty; ;
             if (path == string.Empty)
             {
                 return "C:\\Users\\Григорий\\Desktop\\text.txt";
@@ -65,7 +65,7 @@ namespace Task1
             Console.WriteLine("STATIONOIL 'ТИП-ТОПЛИВА' ДАТА:yyyy.MM.dd ЦЕНА ЗАПРАВКА НАЛИЧИЕ-СКИДКИ(bool)");
             Console.WriteLine("======================================="+"\n");
             Console.WriteLine("Ваша строка:");
-            string line = Console.ReadLine();
+            string line = Console.ReadLine() ?? string.Empty; ;
             return line;
 
         }
