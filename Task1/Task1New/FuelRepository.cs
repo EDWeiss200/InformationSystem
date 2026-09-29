@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Task1
 {
-    internal class FuelRepository
+    public class FuelRepository
     {
         private List<OilCost> costList;
 
@@ -22,6 +22,10 @@ namespace Task1
 
         public List<OilCost> GetAllOils()
         {
+            if (costList.Count == 0)
+            {
+                throw new Exception("Список элементов пуст");
+            }
             return costList;
         }
     }

@@ -6,15 +6,17 @@ using System.Threading.Tasks;
 
 namespace Task1
 {
-    internal class FuelParser
+    public class FuelParser
     {
         public OilCost ParseLine(string line)
         {
             string[] parts = line.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-            string fuelType = parts[0];
+            
 
-            if (parts.Length < 4)
+            if (parts.Length < 4 || parts.Length==0)
                 throw new FormatException("недостаточно данных в строке");
+
+            string fuelType = parts[0];
 
             try
             {

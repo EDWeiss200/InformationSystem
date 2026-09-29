@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Task1
 {
-    internal class StationFuelPrice: OilCost
+    public class StationFuelPrice: OilCost
     {
         public string StationName { get; set; }
         public bool HasDiscount { get; set; }
@@ -20,7 +20,7 @@ namespace Task1
 
         public override string ToString()
         {
-            return $"АЗС: {StationName} Вид топлива: {OilType} Дата: {Date:yyyy.MM.dd} Цена: {Cost} СКИДКА: {HasDiscount}";
+            return $"STATIONOIL АЗС: {StationName} Вид топлива: {OilType} Дата: {Date:yyyy.MM.dd} Цена: {Cost} СКИДКА: {HasDiscount}";
         }
     }
 }

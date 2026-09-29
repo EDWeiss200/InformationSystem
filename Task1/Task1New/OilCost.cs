@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Task1
 {
-    internal class OilCost
+    public class OilCost
     {
         public string OilType;
         public DateTime Date { get; set; }
@@ -21,7 +21,7 @@ namespace Task1
 
         public virtual string ToString()
         {
-            return $"{OilType} на {Date:yyyy.MM.dd} {Cost} руб./л";
+            return $"OIL {OilType} на {Date:yyyy.MM.dd} {Cost} руб./л";
         }
 
 
