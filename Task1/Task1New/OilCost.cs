@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Task1
 {
+    /// <summary>
+    /// Базовый класс, представляющий информацию о стоимости топлива.
+    /// </summary>
     public class OilCost
     {
         public string OilType;

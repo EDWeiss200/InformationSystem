@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: TestFromFuel
+  commentId: N:TestFromFuel
+  id: TestFromFuel
+  children:
+  - TestFromFuel.UnitTest1
+  langs:
+  - csharp
+  - vb
+  name: TestFromFuel
+  nameWithType: TestFromFuel
+  fullName: TestFromFuel
+  type: Namespace
+  assemblies:
+  - TestFromFuel
+references:
+- uid: TestFromFuel.UnitTest1
+  commentId: T:TestFromFuel.UnitTest1
+  href: TestFromFuel.UnitTest1.html
+  name: UnitTest1
+  nameWithType: UnitTest1
+  fullName: TestFromFuel.UnitTest1

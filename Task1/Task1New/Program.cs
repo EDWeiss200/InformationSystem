@@ -1,6 +1,9 @@
 ﻿namespace Task1
 {
-    public class Program
+    /// <summary>
+    /// Главный класс приложения, содержащий точку входа.
+    /// </summary>
+    public static class Program
     {
         private static readonly ConsoleUI ui = new ConsoleUI();
         private static readonly FileHandler fileHandler = new FileHandler();

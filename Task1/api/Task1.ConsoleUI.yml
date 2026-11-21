@@ -1,0 +1,625 @@
+### YamlMime:ManagedReference
+items:
+- uid: Task1.ConsoleUI
+  commentId: T:Task1.ConsoleUI
+  id: ConsoleUI
+  parent: Task1
+  children:
+  - Task1.ConsoleUI.ExceptionPrint(System.Exception)
+  - Task1.ConsoleUI.GetPathFile
+  - Task1.ConsoleUI.GetStringForOil
+  - Task1.ConsoleUI.PrintOils(System.Collections.Generic.List{Task1.OilCost})
+  - Task1.ConsoleUI.ShowAndGetAction
+  - Task1.ConsoleUI.UncorrectAction
+  langs:
+  - csharp
+  - vb
+  name: ConsoleUI
+  nameWithType: ConsoleUI
+  fullName: Task1.ConsoleUI
+  type: Class
+  source:
+    remote:
+      path: Task1/Task1New/ConsoleUI.cs
+      branch: main
+      repo: https://github.com/EDWeiss200/InformationSystem.git
+    id: ConsoleUI
+    path: Task1New/ConsoleUI.cs
+    startLine: 11
+  assemblies:
+  - Task1Up
+  namespace: Task1
+  summary: Класс для взаимодействия с пользователем через консоль.
+  example: []
+  syntax:
+    content: public class ConsoleUI
+    content.vb: Public Class ConsoleUI
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Task1.ConsoleUI.ShowAndGetAction
+  commentId: M:Task1.ConsoleUI.ShowAndGetAction
+  id: ShowAndGetAction
+  parent: Task1.ConsoleUI
+  langs:
+  - csharp
+  - vb
+  name: ShowAndGetAction()
+  nameWithType: ConsoleUI.ShowAndGetAction()
+  fullName: Task1.ConsoleUI.ShowAndGetAction()
+  type: Method
+  source:
+    remote:
+      path: Task1/Task1New/ConsoleUI.cs
+      branch: main
+      repo: https://github.com/EDWeiss200/InformationSystem.git
+    id: ShowAndGetAction
+    path: Task1New/ConsoleUI.cs
+    startLine: 13
+  assemblies:
+  - Task1Up
+  namespace: Task1
+  syntax:
+    content: public int ShowAndGetAction()
+    return:
+      type: System.Int32
+    content.vb: Public Function ShowAndGetAction() As Integer
+  overload: Task1.ConsoleUI.ShowAndGetAction*
+- uid: Task1.ConsoleUI.GetPathFile
+  commentId: M:Task1.ConsoleUI.GetPathFile
+  id: GetPathFile
+  parent: Task1.ConsoleUI
+  langs:
+  - csharp
+  - vb
+  name: GetPathFile()
+  nameWithType: ConsoleUI.GetPathFile()
+  fullName: Task1.ConsoleUI.GetPathFile()
+  type: Method
+  source:
+    remote:
+      path: Task1/Task1New/ConsoleUI.cs
+      branch: main
+      repo: https://github.com/EDWeiss200/InformationSystem.git
+    id: GetPathFile
+    path: Task1New/ConsoleUI.cs
+    startLine: 34
+  assemblies:
+  - Task1Up
+  namespace: Task1
+  syntax:
+    content: public string GetPathFile()
+    return:
+      type: System.String
+    content.vb: Public Function GetPathFile() As String
+  overload: Task1.ConsoleUI.GetPathFile*
+- uid: Task1.ConsoleUI.PrintOils(System.Collections.Generic.List{Task1.OilCost})
+  commentId: M:Task1.ConsoleUI.PrintOils(System.Collections.Generic.List{Task1.OilCost})
+  id: PrintOils(System.Collections.Generic.List{Task1.OilCost})
+  parent: Task1.ConsoleUI
+  langs:
+  - csharp
+  - vb
+  name: PrintOils(List<OilCost>)
+  nameWithType: ConsoleUI.PrintOils(List<OilCost>)
+  fullName: Task1.ConsoleUI.PrintOils(System.Collections.Generic.List<Task1.OilCost>)
+  type: Method
+  source:
+    remote:
+      path: Task1/Task1New/ConsoleUI.cs
+      branch: main
+      repo: https://github.com/EDWeiss200/InformationSystem.git
+    id: PrintOils
+    path: Task1New/ConsoleUI.cs
+    startLine: 45
+  assemblies:
+  - Task1Up
+  namespace: Task1
+  syntax:
+    content: public void PrintOils(List<OilCost> listOils)
+    parameters:
+    - id: listOils
+      type: System.Collections.Generic.List{Task1.OilCost}
+    content.vb: Public Sub PrintOils(listOils As List(Of OilCost))
+  overload: Task1.ConsoleUI.PrintOils*
+  nameWithType.vb: ConsoleUI.PrintOils(List(Of OilCost))
+  fullName.vb: Task1.ConsoleUI.PrintOils(System.Collections.Generic.List(Of Task1.OilCost))
+  name.vb: PrintOils(List(Of OilCost))
+- uid: Task1.ConsoleUI.GetStringForOil
+  commentId: M:Task1.ConsoleUI.GetStringForOil
+  id: GetStringForOil
+  parent: Task1.ConsoleUI
+  langs:
+  - csharp
+  - vb
+  name: GetStringForOil()
+  nameWithType: ConsoleUI.GetStringForOil()
+  fullName: Task1.ConsoleUI.GetStringForOil()
+  type: Method
+  source:
+    remote:
+      path: Task1/Task1New/ConsoleUI.cs
+      branch: main
+      repo: https://github.com/EDWeiss200/InformationSystem.git
+    id: GetStringForOil
+    path: Task1New/ConsoleUI.cs
+    startLine: 54
+  assemblies:
+  - Task1Up
+  namespace: Task1
+  syntax:
+    content: public string GetStringForOil()
+    return:
+      type: System.String
+    content.vb: Public Function GetStringForOil() As String
+  overload: Task1.ConsoleUI.GetStringForOil*
+- uid: Task1.ConsoleUI.ExceptionPrint(System.Exception)
+  commentId: M:Task1.ConsoleUI.ExceptionPrint(System.Exception)
+  id: ExceptionPrint(System.Exception)
+  parent: Task1.ConsoleUI
+  langs:
+  - csharp
+  - vb
+  name: ExceptionPrint(Exception)
+  nameWithType: ConsoleUI.ExceptionPrint(Exception)
+  fullName: Task1.ConsoleUI.ExceptionPrint(System.Exception)
+  type: Method
+  source:
+    remote:
+      path: Task1/Task1New/ConsoleUI.cs
+      branch: main
+      repo: https://github.com/EDWeiss200/InformationSystem.git
+    id: ExceptionPrint
+    path: Task1New/ConsoleUI.cs
+    startLine: 73
+  assemblies:
+  - Task1Up
+  namespace: Task1
+  syntax:
+    content: public void ExceptionPrint(Exception e)
+    parameters:
+    - id: e
+      type: System.Exception
+    content.vb: Public Sub ExceptionPrint(e As Exception)
+  overload: Task1.ConsoleUI.ExceptionPrint*
+- uid: Task1.ConsoleUI.UncorrectAction
+  commentId: M:Task1.ConsoleUI.UncorrectAction
+  id: UncorrectAction
+  parent: Task1.ConsoleUI
+  langs:
+  - csharp
+  - vb
+  name: UncorrectAction()
+  nameWithType: ConsoleUI.UncorrectAction()
+  fullName: Task1.ConsoleUI.UncorrectAction()
+  type: Method
+  source:
+    remote:
+      path: Task1/Task1New/ConsoleUI.cs
+      branch: main
+      repo: https://github.com/EDWeiss200/InformationSystem.git
+    id: UncorrectAction
+    path: Task1New/ConsoleUI.cs
+    startLine: 84
+  assemblies:
+  - Task1Up
+  namespace: Task1
+  syntax:
+    content: public void UncorrectAction()
+    content.vb: Public Sub UncorrectAction()
+  overload: Task1.ConsoleUI.UncorrectAction*
+references:
+- uid: Task1
+  commentId: N:Task1
+  href: Task1.html
+  name: Task1
+  nameWithType: Task1
+  fullName: Task1
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Task1.ConsoleUI.ShowAndGetAction*
+  commentId: Overload:Task1.ConsoleUI.ShowAndGetAction
+  href: Task1.ConsoleUI.html#Task1_ConsoleUI_ShowAndGetAction
+  name: ShowAndGetAction
+  nameWithType: ConsoleUI.ShowAndGetAction
+  fullName: Task1.ConsoleUI.ShowAndGetAction
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Task1.ConsoleUI.GetPathFile*
+  commentId: Overload:Task1.ConsoleUI.GetPathFile
+  href: Task1.ConsoleUI.html#Task1_ConsoleUI_GetPathFile
+  name: GetPathFile
+  nameWithType: ConsoleUI.GetPathFile
+  fullName: Task1.ConsoleUI.GetPathFile
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Task1.ConsoleUI.PrintOils*
+  commentId: Overload:Task1.ConsoleUI.PrintOils
+  href: Task1.ConsoleUI.html#Task1_ConsoleUI_PrintOils_System_Collections_Generic_List_Task1_OilCost__
+  name: PrintOils
+  nameWithType: ConsoleUI.PrintOils
+  fullName: Task1.ConsoleUI.PrintOils
+- uid: System.Collections.Generic.List{Task1.OilCost}
+  commentId: T:System.Collections.Generic.List{Task1.OilCost}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<OilCost>
+  nameWithType: List<OilCost>
+  fullName: System.Collections.Generic.List<Task1.OilCost>
+  nameWithType.vb: List(Of OilCost)
+  fullName.vb: System.Collections.Generic.List(Of Task1.OilCost)
+  name.vb: List(Of OilCost)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Task1.OilCost
+    name: OilCost
+    href: Task1.OilCost.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Task1.OilCost
+    name: OilCost
+    href: Task1.OilCost.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Task1.ConsoleUI.GetStringForOil*
+  commentId: Overload:Task1.ConsoleUI.GetStringForOil
+  href: Task1.ConsoleUI.html#Task1_ConsoleUI_GetStringForOil
+  name: GetStringForOil
+  nameWithType: ConsoleUI.GetStringForOil
+  fullName: Task1.ConsoleUI.GetStringForOil
+- uid: Task1.ConsoleUI.ExceptionPrint*
+  commentId: Overload:Task1.ConsoleUI.ExceptionPrint
+  href: Task1.ConsoleUI.html#Task1_ConsoleUI_ExceptionPrint_System_Exception_
+  name: ExceptionPrint
+  nameWithType: ConsoleUI.ExceptionPrint
+  fullName: Task1.ConsoleUI.ExceptionPrint
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: Task1.ConsoleUI.UncorrectAction*
+  commentId: Overload:Task1.ConsoleUI.UncorrectAction
+  href: Task1.ConsoleUI.html#Task1_ConsoleUI_UncorrectAction
+  name: UncorrectAction
+  nameWithType: ConsoleUI.UncorrectAction
+  fullName: Task1.ConsoleUI.UncorrectAction

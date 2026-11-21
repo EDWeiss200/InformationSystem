@@ -1,0 +1,38 @@
+### YamlMime:TableOfContent
+items:
+- uid: Task1
+  name: Task1
+  type: Namespace
+  items:
+  - uid: Task1.ConsoleUI
+    name: ConsoleUI
+    type: Class
+  - uid: Task1.FileHandler
+    name: FileHandler
+    type: Class
+  - uid: Task1.FuelParser
+    name: FuelParser
+    type: Class
+  - uid: Task1.FuelRepository
+    name: FuelRepository
+    type: Class
+  - uid: Task1.OilCost
+    name: OilCost
+    type: Class
+  - uid: Task1.OptFuelPrice
+    name: OptFuelPrice
+    type: Class
+  - uid: Task1.Program
+    name: Program
+    type: Class
+  - uid: Task1.StationFuelPrice
+    name: StationFuelPrice
+    type: Class
+- uid: TestFromFuel
+  name: TestFromFuel
+  type: Namespace
+  items:
+  - uid: TestFromFuel.UnitTest1
+    name: UnitTest1
+    type: Class
+memberLayout: SamePage
