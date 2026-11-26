@@ -28,6 +28,10 @@ namespace Task1
             {
                 throw new Exception("Ошибка: Файл не найден. Проверьте путь", ex);
             }
+            catch (DirectoryNotFoundException ex)
+            {
+                throw new Exception("Ошибка: Файл не найден. Проверьте путь", ex);
+            }
             catch (UnauthorizedAccessException ex)
             {
                 throw new Exception("Ошибка: Нет доступа к файлу (запрещено системой)", ex);
