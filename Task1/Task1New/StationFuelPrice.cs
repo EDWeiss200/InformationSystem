@@ -6,9 +6,6 @@ using System.Threading.Tasks;
 
 namespace Task1
 {
-    /// <summary>
-    /// Представляет топливо на станции.
-    /// </summary>
     public class StationFuelPrice: OilCost
     {
         public string StationName { get; set; }

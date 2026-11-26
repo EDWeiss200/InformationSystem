@@ -8,9 +8,6 @@ namespace Task1
 {
     public class FuelParser
     {
-        /// <summary>
-        /// Класс, отвечающий за преобразование строковых данных в объекты топлива.
-        /// </summary>
         public OilCost ParseLine(string line)
         {
             string[] parts = line.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);

@@ -6,12 +6,9 @@ using System.Threading.Tasks;
 
 namespace Task1
 {
-    /// <summary>
-    /// Хранилище для управления коллекцией объектов топлива.
-    /// </summary>
     public class FuelRepository
     {
-        private readonly List<OilCost> costList;
+        private List<OilCost> costList;
 
         public FuelRepository(List<OilCost> costList)
         {

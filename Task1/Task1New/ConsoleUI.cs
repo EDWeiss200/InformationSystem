@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace Task1
 {
-    /// <summary>
-    /// Класс для взаимодействия с пользователем через консоль.
-    /// </summary>
     public class ConsoleUI
     {
+
+
         public int ShowAndGetAction()
         {
             while (true)

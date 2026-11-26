@@ -6,9 +6,6 @@ using System.Threading.Tasks;
 
 namespace Task1
 {
-    /// <summary>
-    /// Представляет оптовую цену на топливо.
-    /// </summary>
     public class OptFuelPrice: OilCost
     {
         public int MinBatchTons { get; set; }
@@ -26,7 +23,7 @@ namespace Task1
             return $"OPTOIL Кол-во тонн: {MinBatchTons} Вид топлива: {OilType} Дата: {Date:yyyy.MM.dd} Цена: {Cost}  ДНЕЙ ДОСТАВКИ: {DeliveryDays}";
         }
     }
-
+       
 
 
 }

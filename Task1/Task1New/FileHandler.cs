@@ -9,9 +9,6 @@ namespace Task1
 {
     public class FileHandler
     {
-        /// <summary>
-        /// Класс для чтения данных из файлов.
-        /// </summary>
         public List<string> ReadLines(string path)
         {
             List<string> lines = new List<string>();
@@ -19,7 +16,7 @@ namespace Task1
             {
                 using (StreamReader reader = new StreamReader(path))
                 {
-                    string? line;
+                    string line;
                     while ((line = reader.ReadLine()) != null)
                     {
                         lines.Add(line);
@@ -28,10 +25,6 @@ namespace Task1
                 return lines;
             }
             catch (FileNotFoundException ex)
-            {
-                throw new Exception("Ошибка: Файл не найден. Проверьте путь", ex);
-            }
-            catch (DirectoryNotFoundException ex)
             {
                 throw new Exception("Ошибка: Файл не найден. Проверьте путь", ex);
             }
